@@ -1,7 +1,5 @@
 @import "../../scss/variables";
 
-//===RECIPES========================================
-
 .recipes-container {
     width: 100%;
     height: auto;
@@ -28,7 +26,7 @@
         img {
             width: 150px;
             height: 130px;
-            border-radius: 1rem;
+            border-radius: $main-border-radius;
         }
 
         h3 {
@@ -37,9 +35,29 @@
         }
 
         h4 {
-            font-size: 1em;
+            text-align: center;
+            font-size: 1.1em;
             text-transform: capitalize;
         }
 
+        button {
+            font-size: 1em;
+            font-weight: 600;
+            text-transform: capitalize;
+            padding: .5em 1em;
+            border-radius: $main-border-radius;
+            background-color: $title-color;
+            transition: background-color .3s ease-in-out;
 
+                &:hover {
+                    background-color: darken($title-color, 10%);
+                    transition: background-color .3s ease-in-out;
+                }
+        }
+
+
+}
+
+.slim-text {
+    font-weight: 300;
 }
