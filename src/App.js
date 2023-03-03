@@ -7,6 +7,7 @@ export const App = () => {
 
     //===HOOKS=========================================================================
     const [ recipes, setRecipes ] = useState([])
+    const [ GenerateRecipes, setGenerateRecipes ] = useState("")
 
     //===API=============================================================================
     const api_id  = "76c5daaa"
@@ -28,8 +29,6 @@ export const App = () => {
       dataFromApi()
     }, [])
   
-
-console.log(  recipes )
   
   //===APP================================================================================
   return (
