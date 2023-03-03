@@ -1,3 +1,6 @@
+//==SIZES==================================
+$main-border-radius: 1rem;
+$main-space: 1.2rem;
 
 //===COLORS=================================
 $background-color: #e7e4e4;
@@ -13,8 +16,6 @@ $text-fond: Verdana, Geneva, Tahoma, sans-serif;
 //===FONTS_SIZES=============================
 $title-size: clamp(2.3em, 5.5vw, 5em);
 
-//===BORDERS=================================
-$main-border: 1px solid $title-color;
 
-//==TEXT_SHADOW==============================
+//===TEXT_SHADOW==============================
 $main-text-shadow: 2px 2px 1px $shadow-color;
