@@ -1,4 +1,4 @@
-@import "./varabiles/variables";
+@import "./scss/variables";
 
 //===GENERAL PROPERTIES================================================
 
@@ -12,4 +12,5 @@ body {
     background-color: $background-color;
     color: $text-color;
     font-family: $text-fond;
+    padding: .5em;
 }
