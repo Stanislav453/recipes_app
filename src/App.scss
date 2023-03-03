@@ -12,5 +12,11 @@ body {
     background-color: $background-color;
     color: $text-color;
     font-family: $text-fond;
-    padding: .5em;
+    padding: $main-space;
+}
+
+.app {
+    display: flex;
+    flex-direction: column;
+    gap: $main-space;
 }
