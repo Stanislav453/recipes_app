@@ -1,11 +1,18 @@
 @import "./scss/variables";
 
-//===GENERAL PROPERTIES================================================
+//===GENERAL_PROPERTIES================================================
 
 * {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+}
+
+button {
+    border: none;
+    outline: none;
+    background-color: transparent;
+    cursor: pointer;
 }
 
 body {
@@ -15,6 +22,8 @@ body {
     padding: $main-space;
 }
 
+
+//===APP==================================================================
 .app {
     display: flex;
     flex-direction: column;
