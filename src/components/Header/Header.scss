@@ -1,0 +1,18 @@
+@import "../../scss/variables";
+
+.header {
+    width: 100%;
+    height: auto;
+    border: $main-border;
+    padding: 2em 0;
+    background-color: $box-color;
+    border-radius: 12.5rem;
+    text-transform: capitalize;
+
+        h1 {
+            color: $title-color;
+            text-shadow: $main-text-shadow;
+            text-align: center;
+            font-size: $title-size;
+        }
+}
