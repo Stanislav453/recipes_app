@@ -3,10 +3,9 @@
 .header {
     width: 100%;
     height: auto;
-    border: $main-border;
     padding: 2em 0;
     background-color: $box-color;
-    border-radius: 12.5rem;
+    border-radius: $main-border-radius;
     text-transform: capitalize;
 
         h1 {
