@@ -1,6 +1,7 @@
 import './App.scss';
 import { Header } from './components/Header/Header';
 import React, { useState, useEffect } from 'react';
+import { Recipes } from './components/Recipes/Recipes';
 
 export const App = () => {
 
@@ -34,6 +35,7 @@ console.log(  recipes )
   return (
     <div className='app'>
       <Header />
+      <Recipes recipes={recipes} />
     </div>
   )
 }
