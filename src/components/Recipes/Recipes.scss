@@ -47,11 +47,11 @@
             padding: .5em 1em;
             border-radius: $main-border-radius;
             background-color: $title-color;
-            transition: background-color .3s ease-in-out;
+            transition: $background-animation;
 
                 &:hover {
-                    background-color: darken($title-color, 10%);
-                    transition: background-color .3s ease-in-out;
+                    background-color: $main-hover;
+                    transition: $background-animation;
                 }
         }
 
