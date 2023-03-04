@@ -15,6 +15,8 @@ button {
     cursor: pointer;
 }
 
+li { list-style-type: none; }
+
 body {
     background-color: $background-color;
     color: $text-color;
