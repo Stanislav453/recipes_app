@@ -1,0 +1,28 @@
+@import "../../scss/variables";
+
+.generate-recipes-container {
+    width: 100%;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.generate-recipes {
+    font-size: $generate-recipes-size;
+    text-transform: capitalize;
+    padding: .8em 1.2em;
+    font-weight: 900;
+    font-family: Arial, Helvetica, sans-serif;
+    border-radius: $main-border-radius;
+    transition: $background-animation;
+    background-color: $title-color;
+
+        &:hover {
+            transition: $background-animation;
+            background-color: $main-hover;
+        }
+
+
+}
+
