@@ -1,9 +1,12 @@
 import "./GenerateRecipes.scss"
 
-export const GenerateRecipes = () => {
+export const GenerateRecipes = ({apiNextLink}) => {
     return (
         <div className="generate-recipes-container">
-            <button className="generate-recipes">Generate Recipes</button>
+            <button onClick={() => { apiNextLink() }}
+                    className="generate-recipes">
+                        generate recipes
+            </button>
         </div>
     )
 }
