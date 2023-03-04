@@ -1,4 +1,4 @@
-//==SIZES==================================
+//===SIZES==================================
 $main-border-radius: 1rem;
 $main-space: 1.2rem;
 
@@ -15,6 +15,13 @@ $text-fond: Verdana, Geneva, Tahoma, sans-serif;
 
 //===FONTS_SIZES=============================
 $title-size: clamp(2.3em, 5.5vw, 5em);
+$generate-recipes-size: clamp(1em, 1.5vw, 1.5em);
+
+//===HOVER===================================
+$main-hover: darken($title-color, 10%);
+
+//===ANIMATION===============================
+$background-animation: background-color .3s ease-in-out;
 
 
 //===TEXT_SHADOW==============================
