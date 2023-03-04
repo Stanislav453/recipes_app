@@ -3,6 +3,7 @@ import { Header } from './components/Header/Header';
 import React, { useState, useEffect } from 'react';
 import { Recipes } from './components/Recipes/Recipes';
 import { GenerateRecipes } from './components/GenerateRecipes/GenerateRecipes';
+import { Filter } from './components/Filter/Filter';
 
 export const App = () => {
 
@@ -44,6 +45,7 @@ export const App = () => {
     <div className='app'>
       <Header />
       <GenerateRecipes apiNextLink={apiNextLink} />
+      <Filter recipes={recipes} />
       <Recipes recipes={recipes} />
       
     </div>
