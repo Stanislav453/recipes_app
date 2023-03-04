@@ -2,12 +2,13 @@ import './App.scss';
 import { Header } from './components/Header/Header';
 import React, { useState, useEffect } from 'react';
 import { Recipes } from './components/Recipes/Recipes';
+import { GenerateRecipes } from './components/GenerateRecipes/GenerateRecipes';
 
 export const App = () => {
 
     //===HOOKS=========================================================================
     const [ recipes, setRecipes ] = useState([])
-    const [ GenerateRecipes, setGenerateRecipes ] = useState("")
+    const [ nextRecipes, setNextRecipes ] = useState("")
 
     //===API=============================================================================
     const api_id  = "76c5daaa"
@@ -22,19 +23,29 @@ export const App = () => {
 
       fetch(apiRequest)
       .then( (response) => response.json() )
-        .then((data) => setRecipes(data["hits"]))
+        .then((data) => {
+            setRecipes(data["hits"])
+            setNextRecipes(data["_links"]["next"]["href"]) 
+        }
+            
+      )
     }
 
     useEffect(() => {
       dataFromApi()
-    }, [])
+    }, [apiRequest]) 
   
-  
+  //===NEXT_API_LINK=========================================================================
+  const apiNextLink = () => {
+    return setApiRequest( nextRecipes )
+  }
   //===APP================================================================================
   return (
     <div className='app'>
       <Header />
+      <GenerateRecipes apiNextLink={apiNextLink} />
       <Recipes recipes={recipes} />
+      
     </div>
   )
 }
