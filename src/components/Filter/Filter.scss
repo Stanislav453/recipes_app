@@ -1,1 +1,37 @@
 @import "../../scss/variables";
+
+.filter-container {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    gap: $main-space;
+}
+
+.cuisineType-container {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: $main-space;
+}
+
+.cuisineType-button {
+    border: 1px solid $title-color;
+    font-size: clamp( .8em, 1.5vw, 1em );
+    padding: .5em 1em;
+    border-radius: $main-border-radius;
+    text-transform: capitalize;
+    background-color: $box-color;
+    transition: $background-animation;
+
+        &:hover {
+            background-color: $title-color;
+            transition: $background-animation;
+        }
+}
+
+.active {
+    background-color: $title-color;
+    transition: $background-animation;
+}
