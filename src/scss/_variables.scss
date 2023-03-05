@@ -8,6 +8,7 @@ $box-color: #fff;
 $text-color: #000000ba;
 $title-color: #2ED1A5;
 $shadow-color: #000;
+$close-color: rgb(236, 18, 18);
 
 //=== FONTS
 $title-fond: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -16,6 +17,7 @@ $text-fond: Verdana, Geneva, Tahoma, sans-serif;
 //=== FONTS_SIZES
 $title-size: clamp(2.3em, 5.5vw, 5em);
 $generate-recipes-size: clamp(1em, 1.5vw, 1.5em);
+$modal-title-size: clamp(1em, 3.5vw, 1.5em);
 
 //=== HOVER
 $main-hover: darken($title-color, 10%);
@@ -23,6 +25,6 @@ $main-hover: darken($title-color, 10%);
 //=== ANIMATION
 $background-animation: background-color .3s ease-in-out;
 
-
 //=== TEXT_SHADOW
 $main-text-shadow: 2px 2px 1px $shadow-color;
+$second-text-shadow: 1px 1px 1px $shadow-color;
