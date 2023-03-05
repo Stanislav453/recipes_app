@@ -1,9 +1,9 @@
-import './App.scss';
-import { Header } from './components/Header/Header';
-import React, { useState, useEffect } from 'react';
-import { Recipes } from './components/Recipes/Recipes';
-import { GenerateRecipes } from './components/GenerateRecipes/GenerateRecipes';
-import { Filter } from './components/Filter/Filter';
+import "./App.scss";
+import { Header } from "./components/Header/Header";
+import React, { useState, useEffect } from "react";
+import { GenerateRecipes } from "./components/GenerateRecipes/GenerateRecipes";
+import { Filter } from "./components/Filter/Filter";
+import { Footer } from "./components/Footer/Footer";
 
 export const App = () => {
 
@@ -42,11 +42,13 @@ export const App = () => {
   }
   //=== APP
   return (
-    <div className='app'>
+    <div className="app">
       <Header />
-      <GenerateRecipes apiNextLink={apiNextLink} />
-      <Filter recipes={recipes} />
-      {/* <Recipes recipes={recipes} /> */}
+      <main className="main-container">
+        <GenerateRecipes apiNextLink={apiNextLink} />
+        <Filter recipes={recipes} />
+      </main>
+      <Footer />
       
     </div>
   )
