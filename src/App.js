@@ -7,11 +7,11 @@ import { Filter } from './components/Filter/Filter';
 
 export const App = () => {
 
-    //===HOOKS=========================================================================
+    //=== HOOKS
     const [ recipes, setRecipes ] = useState([])
     const [ nextRecipes, setNextRecipes ] = useState("")
 
-    //===API=============================================================================
+    //=== API
     const api_id  = "76c5daaa"
     const api_key = "6074617b665371e229a7148394ec6bf2"
     const request = `https://api.edamam.com/api/recipes/v2?type=public&q=hamburger%2Cchicken&app_id=${api_id}&app_key=${api_key}`
@@ -19,7 +19,7 @@ export const App = () => {
   
     const [apiRequest, setApiRequest] = useState(request)
   
-   //===FETCH_DATA_FROM_API=================================================================
+   //=== FETCH_DATA_FROM_API
     const dataFromApi = () => {
 
       fetch(apiRequest)
@@ -36,17 +36,17 @@ export const App = () => {
       dataFromApi()
     }, [apiRequest]) 
   
-  //===NEXT_API_LINK=========================================================================
+  //=== NEXT_API_LINK
   const apiNextLink = () => {
     return setApiRequest( nextRecipes )
   }
-  //===APP================================================================================
+  //=== APP
   return (
     <div className='app'>
       <Header />
       <GenerateRecipes apiNextLink={apiNextLink} />
       <Filter recipes={recipes} />
-      <Recipes recipes={recipes} />
+      {/* <Recipes recipes={recipes} /> */}
       
     </div>
   )

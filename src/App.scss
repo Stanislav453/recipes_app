@@ -1,6 +1,6 @@
 @import "./scss/variables";
 
-//===GENERAL_PROPERTIES================================================
+//=== GENERAL_PROPERTIES
 
 * {
     padding: 0;
@@ -25,7 +25,7 @@ body {
 }
 
 
-//===APP==================================================================
+//=== APP
 .app {
     display: flex;
     flex-direction: column;
