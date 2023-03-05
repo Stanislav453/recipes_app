@@ -1,11 +1,14 @@
 import "./Recipes.scss"
 
-export const Recipes = ({recipes}) => {
+
+export const Recipes = ({ filteredData }) => {
+
+
     return (
             <div className="recipes-container">
                 <ul className="recipes-box-container">
                     {
-                        recipes.map((item, key) => {
+                        filteredData.map((item, key) => {
                             const { label, image, cuisineType, calories } = item.recipe
                                 return (
                                     <li key={key} className="recipes-box">
