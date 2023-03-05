@@ -8,7 +8,21 @@
     gap: $main-space;
 }
 
-.cuisineType-container {
+.filter-cuisine-type-container {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-wrap: wrap;
+    gap: $main-space;
+    align-items: center;
+    justify-content: center;
+}
+
+.filter-title {
+    text-transform: uppercase;
+}
+
+.cuisine-type-item-container{
     display: flex;
     flex-wrap: wrap;
     align-items: center;
@@ -16,7 +30,7 @@
     gap: $main-space;
 }
 
-.cuisineType-button {
+.cuisine-type-button {
     border: 1px solid $title-color;
     font-size: clamp( .8em, 1.5vw, 1em );
     padding: .5em 1em;
