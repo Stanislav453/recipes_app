@@ -8,6 +8,14 @@
     box-sizing: border-box;
 }
 
+img {
+    width: 100%;
+    height: auto;
+    vertical-align: middle;
+    display: inline-block;
+    border-radius: $main-border-radius;
+}
+
 button {
     border: none;
     outline: none;
@@ -30,4 +38,10 @@ body {
     display: flex;
     flex-direction: column;
     gap: $main-space;
+}
+
+.main-container {
+    display: flex;
+    flex-direction: column;
+    gap: $main-space
 }
