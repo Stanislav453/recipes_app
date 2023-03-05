@@ -1,1 +1,101 @@
 @import "../../scss/variables";
+
+.modal-container {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1em;
+    overflow-y: auto;
+    background-color: rgba(0, 0, 0, 0.429);
+
+}
+
+.modal {
+    position: relative;
+    width: auto;
+    height: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: $main-space;
+    background-color: $background-color;
+    border-radius: $main-border-radius;
+    padding: 1em;
+}
+
+.modal-closed-button {
+    position: absolute;
+    top: 8px;
+    right: 8px;
+    background-color: $close-color;
+    color: $box-color;
+    font-weight: 900;
+    border-radius: 50%;
+    padding: .5em .7em;
+    transform: scale(1);
+    transition: transform .3s ease-in-out;
+
+        &:hover {
+            transform: scale(1.1);
+            transition: transform .3s ease-in-out;
+        }
+}
+
+.modal-left, .modal-right {
+    background-color: $box-color;
+    border-radius: $main-border-radius;
+    padding: 1em;
+}
+
+//=== MODAL_LEFT
+
+.modal-left {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+.modal-left-title {
+    color: $title-color;
+    text-shadow: $second-text-shadow;
+    font-size: $modal-title-size;
+    text-align: center;
+    margin: 1em 0;
+}
+
+//=== MODAL_RIGHT
+
+.modal-right {
+    flex: 3;
+    min-width: 250px;
+    max-height: 550px;
+    overflow-y: auto;
+}
+
+.modal-right-title {
+    color: $title-color;
+    text-shadow: $second-text-shadow;
+    margin-bottom: .5em;
+    font-size: $modal-title-size;
+}
+
+.modal-right-list-item {
+    margin: .7em 0;
+}
+
+@media ( max-width: 520px ) {
+    .modal-left-img {
+        max-width: 160px;
+        align-self: center;
+    }
+
+    .modal-right {
+        max-height: 220px;
+    }
+}
