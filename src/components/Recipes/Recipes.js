@@ -18,14 +18,14 @@ export const Recipes = ({ filteredData }) => {
                 <ul className="recipes-box-container">
                     {
                         filteredData.map((item, key) => {
-                            const { label, image, cuisineType, calories, ingredientLines } = item.recipe
+                            const { label, image, cuisineType, calories, ingredientLines} = item.recipe
                                 return (
                                     <li key={key} className="recipes-box">
                                         <img src={image} alt={label} />
                                         <h3>{label}</h3>
                                         <h4>cuisine type: <span className="slim-text">{cuisineType}</span></h4>
                                         <h4>calories: <span className="slim-text">{ Math.floor(calories) }kj</span> </h4>
-                                        <button onClick={ () => recipesInfoForModal( label, image, ingredientLines ) } >show ingredients</button>
+                                        <button onClick={() => recipesInfoForModal(label, image, ingredientLines)} >show ingredients</button>
                                     </li>
                                     )
                         } )
