@@ -8,7 +8,8 @@
 .recipes-box-container {
     display: grid;
     gap: 1.2em;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(250px, auto));
+    justify-content: center;
     grid-auto-rows: auto;
     grid-auto-flow: dense;
 }
@@ -23,15 +24,14 @@
     border-radius: $main-border-radius;
     padding: 1rem;
 
-        img {
-            width: 150px;
-            height: 130px;
-            border-radius: $main-border-radius;
-        }
-
         h3 {
+            display: block;
+            max-width: 250px;
+            color: $title-color;
+            text-shadow: $second-text-shadow;
             text-align: center;
             font-size: 1.3em;
+            
         }
 
         h4 {
