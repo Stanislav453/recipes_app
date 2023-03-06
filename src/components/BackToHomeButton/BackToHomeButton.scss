@@ -1,0 +1,28 @@
+@import "../../scss/variables";
+
+.back-to-home-container {
+    position: fixed;
+    right: .4em;
+    bottom: .4em;
+    transform: scale(0);
+    transition: $transform-animation;
+
+}
+
+.back-to-home-button {
+    font-size: $bth-btn-size;
+    color: $title-color;
+    filter: $drop-shadow-main;
+    transform: scale(1);
+    transition: $transform-animation;
+
+    &:hover {
+        transform: scale(1.1);
+        transition:  $transform-animation;
+    }
+}
+
+.back-to-home-container-show {
+    transform: scale(1);
+    transition: $transform-animation;
+}
