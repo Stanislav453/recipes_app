@@ -4,6 +4,7 @@ import React, { useState, useEffect } from "react";
 import { GenerateRecipes } from "./components/GenerateRecipes/GenerateRecipes";
 import { Filter } from "./components/Filter/Filter";
 import { Footer } from "./components/Footer/Footer";
+import { BackToHomeButton } from "./components/BackToHomeButton/BackToHomeButton";
 
 export const App = () => {
 
@@ -14,7 +15,9 @@ export const App = () => {
     //=== API
     const api_id  = "76c5daaa"
     const api_key = "6074617b665371e229a7148394ec6bf2"
-    const request = `https://api.edamam.com/api/recipes/v2?type=public&q=hamburger%2Cchicken&app_id=${api_id}&app_key=${api_key}`
+  const request = `https://api.edamam.com/api/recipes/v2?type=public&q=hamburger%2Cchicken&app_id=${api_id}&app_key=${api_key}`
+  
+
   
   
     const [apiRequest, setApiRequest] = useState(request)
@@ -47,6 +50,7 @@ export const App = () => {
       <main className="main-container">
         <GenerateRecipes apiNextLink={apiNextLink} />
         <Filter recipes={recipes} />
+        <BackToHomeButton />
       </main>
       <Footer />
       
