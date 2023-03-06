@@ -20,6 +20,7 @@
 
 .filter-title {
     text-transform: uppercase;
+    font-size: clamp(.9em, 2.5vw, 1.2em);
 }
 
 .cuisine-type-item-container{
