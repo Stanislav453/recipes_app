@@ -1,4 +1,4 @@
-Recipes app
+Recipes website
 
 This app is for generate recipes and to show recipe ingredients.
 
